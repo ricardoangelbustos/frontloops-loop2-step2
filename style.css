@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2f2f2f;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    background-color: #fdec51;
+    width: 32%;
+    height: 570px;
+    margin: 25px auto;
+}
+.title{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px 0 55px;
+    box-sizing: border-box;
+}
+.title h1{
+    font-size: 17px;
+    font-weight: 500;
+}
+.form{
+    background-color: white;
+    width: 100%;
+    height: 380px;
+    padding: 45px 35px 0 35px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    box-sizing: border-box;
+    -webkit-box-shadow: -10px 10px 20px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 20px -12px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 20px -12px rgba(0,0,0,0.75);
+}
+.form label{
+    font-size: 12px;
+    color: #adabab;
+    font-weight: 500;
+}
+.image{
+    background-color: rosybrown;
+    height: 0;
+    position: relative;
+    bottom: 70px;
+}
+.image img{
+    width: 55px;
+    border-radius: 30px;
+}
+.username{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.username input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+.names{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.names input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+.email{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+.email input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+.bio{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+}
+.bio textarea{
+    width: 100%;
+    height: 90px;
+    border: none;
+    resize: vertical;
+    border-bottom: 1px solid #e6e6e6;
+}
+.bio textarea::placeholder{
+    font-family: "Roboto", sans-serif;
+}
+.buttons{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttons a{
+    text-decoration: none;
+    color: #716c3f;
+    transition: 500ms;
+    margin-right: 50px;
+}
+.buttons a:hover{
+    color: black;
+}
+@media (max-width: 2652px){
+    .names{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1024px){
+    .names{
+        display: block;
+        height: 130px;
+        margin-bottom: 0px;
+    }
+    .first{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        height: 450px;
+    }
+    .container{
+        height: 650px;
+    }
+}
+@media (max-width: 618px){
+    .title h1{
+        font-size: 25px;
+    }
+    .container{
+        width: 90%;
+    }
+    .form{
+        margin-left: 0;
+    }
+}
